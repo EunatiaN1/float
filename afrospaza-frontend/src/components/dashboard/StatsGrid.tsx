@@ -39,15 +39,17 @@ export function StatsGrid() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       {stats.map((stat, i) => (
-        <GlassCard key={i} variant="hover" className="p-4 space-y-3">
+        <GlassCard key={i} variant="hover" className="p-4 space-y-3 rounded-2xl bg-white/[0.02]">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-semibold text-zinc-400">{stat.title}</span>
-            <div className="p-2 rounded-xl bg-surface-elevated border border-border">
+            <span className="text-[11px] font-semibold uppercase tracking-[0.12em] text-zinc-400">
+              {stat.title}
+            </span>
+            <div className="p-2.5 rounded-xl bg-white/[0.04] border border-white/5 shadow-[0_12px_24px_rgba(0,0,0,0.18)]">
               {stat.icon}
             </div>
           </div>
           <div>
-            <span className="text-2xl font-black text-white">{stat.value}</span>
+            <span className="text-2xl font-black text-white tracking-[-0.05em]">{stat.value}</span>
             <p className="text-[11px] text-zinc-500 mt-0.5">{stat.subtext}</p>
           </div>
         </GlassCard>

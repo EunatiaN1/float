@@ -23,18 +23,18 @@ export default function MarketingLandingPage() {
       <BackgroundGlow />
 
       {/* Header */}
-      <header className="sticky top-0 z-40 w-full border-b border-border/80 bg-background/80 backdrop-blur-xl">
+      <header className="sticky top-0 z-40 w-full border-b border-white/5 bg-black/60 backdrop-blur-xl">
         <div className="max-w-7xl mx-auto flex items-center justify-between h-18 px-6">
           <Link href="/" className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-orange-glow">
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-[0_12px_30px_rgba(249,115,22,0.3)]">
               <Zap size={20} className="text-white fill-white" />
             </div>
-            <span className="font-extrabold text-lg text-white">
-              Afro<span className="text-orange-500">Spaza</span>
+            <span className="font-extrabold text-lg tracking-[-0.04em] text-white">
+              Afro<span className="text-orange-400">Spaza</span>
             </span>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-400">
+          <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-zinc-400">
             <a href="#architecture" className="hover:text-white transition-colors">
               Agent Architecture
             </a>
@@ -61,107 +61,99 @@ export default function MarketingLandingPage() {
         </div>
       </header>
 
-      {/* Hero Section */}
       <section className="relative pt-24 pb-20 px-6 z-10">
-        <div className="max-w-4xl mx-auto text-center space-y-6">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-semibold">
+        <div className="max-w-5xl mx-auto text-center space-y-8">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/10 border border-orange-400/20 text-orange-200 text-xs font-semibold tracking-[0.12em] uppercase">
             <span className="w-2 h-2 rounded-full bg-orange-400 animate-pulse" />
-            <span>Autonomous Spaza Micro-Commerce Powered by XRPL</span>
+            <span>Autonomous commerce</span>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl font-black text-white tracking-tight leading-tight">
-            Decentralized Retail <br />
-            <span className="text-gradient-orange">Replenishment Mesh</span> for Africa.
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-[-0.06em] leading-[0.94]">
+            Minimal luxury for
+            <span className="block text-gradient-orange">retail automation.</span>
           </h1>
 
           <p className="text-base sm:text-lg text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-            AfroSpaza empowers informal township merchants with autonomous AI procurement agents,
-            instant stablecoin settlement on <strong>XRP Ledger (RLUSD)</strong>, and tamper-proof
-            mandate guard rails.
+            AfroSpaza blends premium product design with autonomous AI, instant settlement, and
+            strong mandate protections for township commerce across Africa.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
             <Link href="/dashboard">
               <GlassButton variant="primary" size="lg" icon={<Zap size={18} />}>
-                Open Spaza Control Plane
+                Open Control Plane
               </GlassButton>
             </Link>
             <Link href="/demo">
               <GlassButton variant="secondary" size="lg" icon={<ShieldCheck size={18} />}>
-                Run Adversarial Attack Demo
+                Run Attack Demo
               </GlassButton>
             </Link>
           </div>
 
-          <div className="pt-8 flex flex-wrap items-center justify-center gap-6 text-xs text-zinc-500">
+          <div className="pt-4 flex flex-wrap items-center justify-center gap-6 text-xs text-zinc-500">
             <span className="flex items-center gap-2">
-              <CheckCircle2 size={15} className="text-emerald-400" />
-              Sub-second XRPL Finality
+              <CheckCircle2 size={15} className="text-orange-400" />
+              Sub-second settlement
             </span>
             <span className="flex items-center gap-2">
-              <CheckCircle2 size={15} className="text-emerald-400" />
-              RLUSD Escrow Protection
+              <CheckCircle2 size={15} className="text-orange-400" />
+              RLUSD escrow protection
             </span>
             <span className="flex items-center gap-2">
-              <CheckCircle2 size={15} className="text-emerald-400" />
-              Prompt Injection Defense Matrix
+              <CheckCircle2 size={15} className="text-orange-400" />
+              Guardrail safety layer
             </span>
           </div>
         </div>
       </section>
 
-      {/* Architecture Highlights */}
-      <section id="architecture" className="py-16 px-6 z-10 border-t border-border/80 bg-surface/40">
+      <section id="architecture" className="py-16 px-6 z-10 border-t border-white/5 bg-white/[0.015]">
         <div className="max-w-6xl mx-auto space-y-12">
           <div className="text-center space-y-2">
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-white">
-              Autonomous Multi-Agent Mesh
-            </h2>
-            <p className="text-sm text-zinc-400 max-w-xl mx-auto">
-              Three autonomous micro-agents collaborate under strict cryptographic constraints.
+            <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-orange-300">
+              System design
             </p>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-[-0.05em]">
+              A refined operating layer for high-trust commerce.
+            </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="glass-card p-6 space-y-4">
-              <div className="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/30 flex items-center justify-center">
-                <Cpu size={20} className="text-orange-400" />
+              <div className="w-11 h-11 rounded-2xl bg-orange-500/10 border border-orange-400/20 flex items-center justify-center">
+                <Cpu size={20} className="text-orange-300" />
               </div>
-              <h3 className="text-base font-bold text-white">Agent 1: Procurement</h3>
-              <p className="text-xs text-zinc-400 leading-relaxed">
-                Scans local wholesale price books across township distribution hubs, negotiating bulk
-                maize, sunflower oil, and dairy rates in real time.
+              <h3 className="text-base font-bold text-white">Procurement agent</h3>
+              <p className="text-sm text-zinc-400 leading-relaxed">
+                Negotiates price, inventory, and timing across local supply corridors with precision.
               </p>
             </div>
 
-            <div className="glass-card p-6 space-y-4 border-orange-500/30">
-              <div className="w-10 h-10 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center">
-                <ShieldCheck size={20} className="text-emerald-400" />
+            <div className="glass-card p-6 space-y-4 border-orange-400/20">
+              <div className="w-11 h-11 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center">
+                <ShieldCheck size={20} className="text-white" />
               </div>
-              <h3 className="text-base font-bold text-white">Layer: Mandate Guard</h3>
-              <p className="text-xs text-zinc-400 leading-relaxed">
-                Pre-flight validation engine that verifies daily budgets, single tx ceilings, vetted
-                whitelists, and adversarial prompt injection before execution.
+              <h3 className="text-base font-bold text-white">Mandate guard</h3>
+              <p className="text-sm text-zinc-400 leading-relaxed">
+                Validates risk policies, spending limits, and approvals before the system commits.
               </p>
             </div>
 
             <div className="glass-card p-6 space-y-4">
-              <div className="w-10 h-10 rounded-xl bg-blue-500/15 border border-blue-500/30 flex items-center justify-center">
-                <Coins size={20} className="text-blue-400" />
+              <div className="w-11 h-11 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center">
+                <Coins size={20} className="text-orange-300" />
               </div>
-              <h3 className="text-base font-bold text-white">Agent 2: Treasury</h3>
-              <p className="text-xs text-zinc-400 leading-relaxed">
-                Creates XRPL Escrows and Payment Channels in Ripple USD (RLUSD), ensuring money only
-                moves upon verified delivery receipt.
+              <h3 className="text-base font-bold text-white">Treasury layer</h3>
+              <p className="text-sm text-zinc-400 leading-relaxed">
+                Settles only on verified delivery, using XRPL rails and escrow protections.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="mt-auto py-8 border-t border-border px-6 text-center text-xs text-zinc-500 z-10">
+      <footer className="mt-auto py-8 border-t border-white/5 px-6 text-center text-xs text-zinc-500 z-10">
         <p>© 2026 AfroSpaza Technologies. Powered by XRP Ledger.</p>
       </footer>
     </div>

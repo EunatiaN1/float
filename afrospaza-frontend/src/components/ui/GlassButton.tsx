@@ -24,13 +24,13 @@ export function GlassButton({
 
   const variantStyles = {
     primary:
-      "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold shadow-orange-glow border border-orange-400/30",
+      "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold shadow-[0_10px_30px_rgba(249,115,22,0.28)] border border-orange-300/20",
     secondary:
-      "bg-surface hover:bg-surface-elevated text-zinc-200 border border-border hover:border-zinc-700",
+      "bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-orange-400/30 shadow-[0_10px_20px_rgba(0,0,0,0.2)]",
     danger:
       "bg-red-500/20 hover:bg-red-500/30 text-red-400 border border-red-500/40 shadow-glass",
     ghost: "bg-transparent hover:bg-white/5 text-zinc-400 hover:text-white border-transparent",
-    xrpl: "bg-blue-600/20 hover:bg-blue-600/30 text-blue-400 border border-blue-500/30 shadow-blue-glow font-medium",
+    xrpl: "bg-orange-500/10 hover:bg-orange-500/15 text-orange-300 border border-orange-400/30 font-medium",
   }[variant];
 
   return (

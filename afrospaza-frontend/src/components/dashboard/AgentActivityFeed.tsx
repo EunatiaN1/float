@@ -16,13 +16,12 @@ export function AgentActivityFeed() {
   };
 
   return (
-    <GlassCard variant="hover" className="space-y-5">
-      {/* Agents Status Chips */}
+    <GlassCard variant="hover" className="space-y-5 rounded-2xl bg-white/[0.02]">
       <div>
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-2">
             <Terminal size={17} className="text-orange-400" />
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider">
+            <h3 className="text-[11px] font-bold text-white uppercase tracking-[0.18em]">
               Autonomous Agent Swarm
             </h3>
           </div>
@@ -33,10 +32,10 @@ export function AgentActivityFeed() {
           {agents.map((agent) => (
             <div
               key={agent.type}
-              className="p-2.5 rounded-xl bg-surface-elevated/70 border border-border flex flex-col justify-between space-y-2"
+              className="p-2.5 rounded-xl bg-white/[0.02] border border-white/5 flex flex-col justify-between space-y-2 shadow-[0_12px_20px_rgba(0,0,0,0.16)]"
             >
               <div className="flex items-center justify-between">
-                <span className="p-1 rounded-lg bg-surface">{agentIcons[agent.type]}</span>
+                <span className="p-1 rounded-lg bg-black/30 border border-white/5">{agentIcons[agent.type]}</span>
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
               </div>
               <div>
@@ -48,16 +47,15 @@ export function AgentActivityFeed() {
         </div>
       </div>
 
-      {/* Real-time Agent Log Stream */}
-      <div className="space-y-2 pt-2 border-t border-border/70">
-        <span className="text-xs font-semibold text-zinc-400 uppercase tracking-wider block">
+      <div className="space-y-2 pt-2 border-t border-white/5">
+        <span className="text-[11px] font-semibold text-zinc-400 uppercase tracking-[0.18em] block">
           Live Agent Telemetry Stream
         </span>
 
         <div className="space-y-2 max-h-64 overflow-y-auto pr-1 font-mono text-[11px]">
           {logs.map((log) => {
             const levelStyles = {
-              INFO: "text-zinc-400 border-zinc-800",
+              INFO: "text-zinc-400 border-zinc-800/80",
               SUCCESS: "text-emerald-300 border-emerald-500/20 bg-emerald-500/5",
               WARN: "text-amber-300 border-amber-500/20 bg-amber-500/5",
               ERROR: "text-red-400 border-red-500/20 bg-red-500/5",

@@ -11,24 +11,24 @@ export function RulesCard() {
   const { mandate } = useMandate();
 
   return (
-    <GlassCard variant="hover" className="space-y-4">
+    <GlassCard variant="hover" className="space-y-4 rounded-2xl bg-white/[0.02]">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <ShieldCheck size={18} className="text-orange-400" />
-          <h3 className="text-sm font-bold text-white uppercase tracking-wider">
+          <h3 className="text-[11px] font-bold text-white uppercase tracking-[0.18em]">
             Active Guard Rules ({mandate.rules.filter((r) => r.enabled).length})
           </h3>
         </div>
         <Link
           href="/settings"
-          className="text-xs font-semibold text-orange-400 hover:text-orange-300 flex items-center gap-1"
+          className="text-[11px] font-semibold text-orange-300 hover:text-orange-200 flex items-center gap-1"
         >
           <span>Edit Rules</span>
           <ChevronRight size={14} />
         </Link>
       </div>
 
-      <div className="divide-y divide-border/60">
+      <div className="divide-y divide-white/5">
         {mandate.rules.slice(0, 3).map((rule) => (
           <div key={rule.id} className="py-2.5 flex items-center justify-between text-xs">
             <div className="space-y-0.5">
@@ -38,7 +38,7 @@ export function RulesCard() {
               </span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-[10px] px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-medium">
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-medium">
                 Enforced
               </span>
             </div>

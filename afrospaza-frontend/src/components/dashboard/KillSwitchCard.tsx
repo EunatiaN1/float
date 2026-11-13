@@ -27,7 +27,7 @@ export function KillSwitchCard() {
     <>
       <GlassCard
         variant={mandate.killSwitchActive ? "dangerGlow" : "hover"}
-        className="space-y-4"
+        className="space-y-4 rounded-2xl bg-white/[0.02]"
       >
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -35,12 +35,12 @@ export function KillSwitchCard() {
               size={18}
               className={mandate.killSwitchActive ? "text-red-400 animate-pulse" : "text-zinc-400"}
             />
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider">
+            <h3 className="text-[11px] font-bold text-white uppercase tracking-[0.18em]">
               Emergency Kill Switch
             </h3>
           </div>
           <span
-            className={`text-[10px] font-bold px-2 py-0.5 rounded ${
+            className={`text-[10px] font-bold px-2.5 py-1 rounded-full ${
               mandate.killSwitchActive
                 ? "bg-red-500/20 text-red-400 border border-red-500/40"
                 : "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"

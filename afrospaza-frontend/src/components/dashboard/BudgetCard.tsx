@@ -26,21 +26,21 @@ export function BudgetCard() {
   }[bufferHealth];
 
   return (
-    <GlassCard variant="hover" className="space-y-5">
+    <GlassCard variant="hover" className="space-y-5 rounded-2xl bg-white/[0.02]">
       <div className="flex items-center justify-between">
-        <span className="text-xs font-bold uppercase tracking-wider text-zinc-400">
+        <span className="text-[11px] font-bold uppercase tracking-[0.18em] text-zinc-400">
           Autonomous Daily Mandate
         </span>
         <span
-          className={`text-[11px] font-bold px-2.5 py-0.5 rounded-full border ${healthBadge.color}`}
+          className={`text-[10px] font-bold px-2.5 py-1 rounded-full border ${healthBadge.color}`}
         >
           {healthBadge.text}
         </span>
       </div>
 
       <div className="space-y-1">
-        <div className="flex items-baseline justify-between">
-          <span className="text-3xl font-extrabold text-white tracking-tight">
+        <div className="flex items-baseline justify-between gap-3">
+          <span className="text-3xl font-black text-white tracking-[-0.05em]">
             {formatZAR(availableBudgetZAR)}
           </span>
           <span className="text-xs text-zinc-500">
@@ -48,13 +48,12 @@ export function BudgetCard() {
           </span>
         </div>
         <p className="text-xs text-zinc-400">
-          Backstopped by <strong className="text-orange-400">{formatRLUSD(rlusdBalance)}</strong> in XRPL treasury
+          Backstopped by <strong className="text-orange-300">{formatRLUSD(rlusdBalance)}</strong> in XRPL treasury
         </p>
       </div>
 
-      {/* Progress Bar */}
       <div className="space-y-2">
-        <div className="w-full bg-zinc-800/80 rounded-full h-2.5 overflow-hidden p-0.5">
+        <div className="w-full bg-white/5 rounded-full h-2.5 overflow-hidden p-0.5 border border-white/5">
           <div
             className={`h-full rounded-full transition-all duration-500 ${
               percentUsed > 85 ? "bg-red-500" : percentUsed > 60 ? "bg-amber-500" : "bg-orange-500"
