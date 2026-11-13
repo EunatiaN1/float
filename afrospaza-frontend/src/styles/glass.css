@@ -1,0 +1,50 @@
+/* AfroSpaza Glassmorphism & Custom Gradient Utilities */
+.glass-card {
+  background: rgba(15, 17, 23, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 14px;
+}
+
+.glass-card-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover:hover {
+  background: rgba(23, 26, 35, 0.85);
+  border-color: rgba(249, 115, 22, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 36px 0 rgba(249, 115, 22, 0.1);
+}
+
+.glass-card-orange-glow {
+  background: rgba(15, 17, 23, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(249, 115, 22, 0.35);
+  box-shadow: 0 0 35px -8px rgba(249, 115, 22, 0.25);
+  border-radius: 14px;
+}
+
+.glass-card-danger-glow {
+  background: rgba(25, 12, 12, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  box-shadow: 0 0 35px -8px rgba(239, 68, 68, 0.3);
+  border-radius: 14px;
+}
+
+.text-gradient-orange {
+  background: linear-gradient(135deg, #ffffff 20%, #f97316 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #00f0ff 0%, #2388ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
